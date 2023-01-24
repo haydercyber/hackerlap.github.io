@@ -13,13 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          branch: main
-      - uses: retypeapp/action-build@latest
-        with:
-          branch: main
 
+      - uses: retypeapp/action-build@latest
       - uses: retypeapp/action-github-pages@latest
         with:
           update-branch: true
-          branch: main
